@@ -1,0 +1,129 @@
+
+:root {
+    --Soft-orange : hsl(35, 77%, 62%);
+    --Soft-red: hsl(5, 85%, 63%);
+    --Off-white: hsl(36, 100%, 99%);
+    --Grayish-blue: hsl(233, 8%, 79%);
+    --Dark-grayish-blue: hsl(236, 13%, 42%);
+    --Very-dark-blue: hsl(240, 100%, 5%);
+
+}
+body{
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: Inter;
+
+
+}
+.top-nav{
+    display: grid;
+    grid-template-columns: 6fr 1fr 1fr 1fr 1fr 1fr;
+}
+.top-nav a{
+    text-decoration: none;
+    color: var(--Dark-grayish-blue);
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    max-width: 1500px;
+    margin: 0 auto;
+    background: var(--Off-white);
+
+}
+.main-img{
+    width: 100%;
+    grid-column: span 2;
+    overflow: hidden;
+}
+.bold{
+    font-weight: 700;
+}
+nav{
+    grid-column: span 3;
+}
+.textbox{
+    background: var(--Very-dark-blue);
+    padding: 30px;
+    grid-row: span 2 ;
+}
+.textbox h1{
+    color: var(--Soft-orange);
+    margin-bottom: 40px;
+}
+.textbox p{
+    color: var(--Grayish-blue);
+    margin-bottom: 20px;
+}
+.textbox h2{
+    color: var(--Off-white);
+}
+.bold p{
+    font-size: 60px;
+}
+    
+
+section p {
+    font-size: 20px;
+    margin-bottom: 100px;
+    color: var(--Dark-grayish-blue);
+}
+section button{
+    width: 170px;
+    background: var(--Soft-red);
+    padding: 15px;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+span{
+    color: var(--Soft-red);
+    font-size: 48px;
+}
+article{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+}
+article div{
+    padding: 20px;
+    align-items: center;
+}
+article div p{
+    color: var(--Dark-grayish-blue);
+}
+h2{
+    color:  1px var(--Off-white);
+}
+@media screen and (max-width:375px){
+    main{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 375px;
+    margin: 0 auto;
+    background: var(--Off-white);
+
+}
+    .main-img{
+        background-image: url(assets/images/image-retro-pcs.jpg);
+        background-size: cover;
+        background: position;
+        height: 500px;
+        width: 100%;
+        
+    }
+}
+
+
+
+
+    
+    
+
+
+
+ 
+ 
